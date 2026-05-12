@@ -20,6 +20,9 @@ const CartItem = ({ onContinueShopping }) => {
 
         return total;
   };
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
 
   const handleContinueShopping = (e) => {
     e.preventDefault();
